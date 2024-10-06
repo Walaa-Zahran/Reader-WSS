@@ -4,12 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reader - Home</title>
-    <link
-      rel="icon"
-      href="assets/imgs/head-logo.png"
-      size="16x16"
-      type="image/png"
-    />
+    <link rel="icon" href="assets/imgs/head-logo.png" type="image/png" />
 
     <!-- Bootstrap CSS -->
     <link
@@ -23,10 +18,10 @@
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
-    <div class="container-fluid wss_dashboard">
-      <div class="row">
+    <div class="wss_dashboard p-0">
+      <div class="row align-items-baseline w-100">
         <!-- Sidebar -->
-        <aside class="col-sm-2 wss_sidebar p-5 py-3">
+        <aside class="col-md-2 wss_sidebar p-5 py-3">
           <header aria-label="Sidebar Header">
             <img
               src="assets/imgs/logo.svg"
@@ -35,15 +30,18 @@
             />
           </header>
 
-          <nav class="mt-5 pt-3 sidebar-nav" aria-label="Sidebar Navigation">
+          <nav
+            class="mt-5 pt-3 sidebar-nav d-none d-lg-block d-xl-block"
+            aria-label="Sidebar Navigation"
+          >
             <ul class="nav flex-column">
               <li class="nav-item wss_nav-item">
                 <a class="nav-link active" href="#">
                   <img
                     src="assets/imgs/home.svg"
                     alt="home"
-                    width="19px"
-                    height="19px"
+                    width="19"
+                    height="19"
                   />
                   <span class="d-none d-xxl-block d-xl-block d-lg-block"
                     >Home</span
@@ -55,8 +53,8 @@
                   <img
                     src="assets/imgs/discover.svg"
                     alt="discover"
-                    width="19px"
-                    height="19px"
+                    width="19"
+                    height="19"
                   />
                   <span class="d-none d-xxl-block d-xl-block d-lg-block"
                     >Discover</span
@@ -68,8 +66,8 @@
                   <img
                     src="assets/imgs/recommendations.svg"
                     alt="recommendations"
-                    width="19px"
-                    height="19px"
+                    width="19"
+                    height="19"
                   />
                   <span class="d-none d-xxl-block d-xl-block d-lg-block"
                     >Recommendations</span
@@ -81,8 +79,8 @@
                   <img
                     src="assets/imgs/wishlist.svg"
                     alt="wishlist"
-                    width="19px"
-                    height="19px"
+                    width="19"
+                    height="19"
                   />
                   <span class="d-none d-xxl-block d-xl-block d-lg-block"
                     >Wishlist</span
@@ -94,8 +92,8 @@
                   <img
                     src="assets/imgs/settings.svg"
                     alt="settings"
-                    width="19px"
-                    height="19px"
+                    width="19"
+                    height="19"
                   />
                   <span class="d-none d-xxl-block d-xl-block d-lg-block"
                     >Settings</span
@@ -134,25 +132,25 @@
           </section>
 
           <!-- Recommended Books -->
-          <section class="wss_recommended-section mb-4">
+          <section class="wss_recommended-section mb-2">
             <h3>Recommended For You</h3>
             <div class="row wss_recommended-card">
               <article class="col-md-6 wss_book-card">
                 <div class="card">
                   <img
                     src="assets/imgs/bald-1.svg"
-                    class="card-img-top img-fluid"
+                    class="img-fluid"
                     alt="Bald Bearded Boss"
                   />
-                  <div class="card-body p-0">
-                    <h5 class="card-title">Bald Bearded Boss</h5>
-                    <p class="wss_author">By Elliott Holt | Feb 2020</p>
-                    <p class="card-text">
+                  <div class="card-body card-height p-0">
+                    <h4 class="card-title">Bald Bearded Boss</h4>
+                    <h5 class="wss_author">By Elliott Holt | Feb 2020</h5>
+                    <h6 class="card-text">
                       <span class="text-warning">
                         <img src="assets/imgs/rating.svg" alt="5 star rating" />
                       </span>
                       <span class="text-rating">(27)</span>
-                    </p>
+                    </h6>
                     <p class="wss_description">
                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                       Aenean commodo ligula eget dolor. Lorem ipsum dolor sit
@@ -164,15 +162,15 @@
               <article class="col-md-2"></article>
               <article class="col-md-4 wss_book-card">
                 <div class="card">
-                  <div class="card-body px-4 p-0">
-                    <h5 class="card-title">Human Flourishing</h5>
-                    <p class="wss_author">By Francis Su | Feb 2020</p>
-                    <p class="card-text">
+                  <div class="card-body card-height p-0">
+                    <h4 class="card-title">Human Flourishing</h4>
+                    <h5 class="wss_author">By Francis Su | Feb 2020</h5>
+                    <h6 class="card-text">
                       <span class="text-warning">
                         <img src="assets/imgs/rating.svg" alt="5 star rating" />
                       </span>
                       <span class="text-rating">(27)</span>
-                    </p>
+                    </h6>
                     <p class="wss_description">
                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                       Aenean commodo ligula eget dolor. Lorem ipsum dolor sit
@@ -186,7 +184,7 @@
 
           <!-- Best Seller - Book Tabs -->
           <section class="wss_tabs-section">
-            <nav class="nav nav-tabs mb-3" aria-label="Book Categories">
+            <ul class="nav nav-tabs mb-1" aria-label="Book Categories">
               <li class="nav-item wss_nav-bottom">
                 <a class="nav-link active" href="#"
                   >The New York Times Best Sellers</a
@@ -201,7 +199,7 @@
               <li class="nav-item wss_nav-bottom">
                 <a class="nav-link" href="#">Tab Four</a>
               </li>
-            </nav>
+            </ul>
           </section>
 
           <!-- Years Navigation -->
@@ -253,7 +251,7 @@
           </section>
 
           <!-- Books Grid -->
-          <div class="row pt-4 pb-5">
+          <div class="row pt-4 pb-5 gap-sm-4 gap-md-0">
             <article class="col-md-4 wss_book-card">
               <div class="card">
                 <img
@@ -315,7 +313,7 @@
         </main>
 
         <!-- Right Sidebar/Profile Section -->
-        <aside class="col-md-12 col-lg-2 col-sm-12 wss_profile-sidebar">
+        <aside class="col-md-12 col-lg-2 col-sm-12 wss_profile-sidebars">
           <div class="wss_top-icons">
             <img
               src="assets/imgs/cart.svg"

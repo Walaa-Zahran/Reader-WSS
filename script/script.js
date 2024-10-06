@@ -11,7 +11,7 @@ document
 // Toggle Sidebar Visibility
 const toggleSidebar = () => {
   const sidebar = document.querySelector(".sidebar-nav");
-  sidebar.classList.toggle("hidden");
+  sidebar.classList.toggle("d-none");
 };
 
 // Attach Click Event to Sidebar Toggle Button
