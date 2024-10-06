@@ -26,7 +26,7 @@
     <div class="container-fluid wss_dashboard">
       <div class="row">
         <!-- Sidebar -->
-        <aside class="col-sm-2 wss_sidebar p-5">
+        <aside class="col-sm-2 wss_sidebar p-5 py-3">
           <header aria-label="Sidebar Header">
             <img
               src="assets/imgs/logo.svg"
@@ -35,7 +35,7 @@
             />
           </header>
 
-          <nav class="mt-5 pt-3" aria-label="Sidebar Navigation">
+          <nav class="mt-5 pt-3 sidebar-nav" aria-label="Sidebar Navigation">
             <ul class="nav flex-column">
               <li class="nav-item wss_nav-item">
                 <a class="nav-link active" href="#">
@@ -107,12 +107,12 @@
         </aside>
 
         <!-- Main Content -->
-        <main class="col-sm-12 col-md-8 wss_main-content">
+        <main class="col-sm-12 col-md-12 col-lg-8 wss_main-content">
           <!-- Search Bar -->
           <nav class="wss_search-container" aria-label="Search Books">
             <input
               type="text"
-              placeholder="Search your favorite books"
+              placeholder="Search you favourite books"
               class="wss_search-input"
             />
           </nav>
@@ -137,14 +137,14 @@
           <section class="wss_recommended-section mb-4">
             <h3>Recommended For You</h3>
             <div class="row wss_recommended-card">
-              <article class="col-md-5 wss_book-card">
+              <article class="col-md-6 wss_book-card">
                 <div class="card">
                   <img
                     src="assets/imgs/bald-1.svg"
                     class="card-img-top img-fluid"
                     alt="Bald Bearded Boss"
                   />
-                  <div class="card-body px-0">
+                  <div class="card-body p-0">
                     <h5 class="card-title">Bald Bearded Boss</h5>
                     <p class="wss_author">By Elliott Holt | Feb 2020</p>
                     <p class="card-text">
@@ -161,10 +161,10 @@
                   </div>
                 </div>
               </article>
-              <article class="col-md-3"></article>
+              <article class="col-md-2"></article>
               <article class="col-md-4 wss_book-card">
                 <div class="card">
-                  <div class="card-body px-4">
+                  <div class="card-body px-4 p-0">
                     <h5 class="card-title">Human Flourishing</h5>
                     <p class="wss_author">By Francis Su | Feb 2020</p>
                     <p class="card-text">
@@ -261,7 +261,7 @@
                   alt="The Tiny Dragon Book Cover"
                   class="img-fluid"
                 />
-                <div class="card-body">
+                <div class="card-body px-0">
                   <h5 class="wss_book-name">The Tiny Dragon</h5>
                   <p class="wss_author-bottom">By Mesha Maren | Feb 2020</p>
                   <p class="card-text">
@@ -280,8 +280,8 @@
                   alt="The Tiny Dragon Book Cover"
                   class="img-fluid"
                 />
-                <div class="card-body">
-                  <h5 class="wss_book-name">The Tiny Dragon</h5>
+                <div class="card-body px-0">
+                  <h5 class="wss_book-name">World of Abstract Art</h5>
                   <p class="wss_author-bottom">By Mesha Maren | Feb 2020</p>
                   <p class="card-text">
                     <span class="text-warning">
@@ -299,8 +299,8 @@
                   alt="The Tiny Dragon Book Cover"
                   class="img-fluid"
                 />
-                <div class="card-body">
-                  <h5 class="wss_book-name">The Tiny Dragon</h5>
+                <div class="card-body px-0">
+                  <h5 class="wss_book-name">Sunset Kiss</h5>
                   <p class="wss_author-bottom">By Mesha Maren | Feb 2020</p>
                   <p class="card-text">
                     <span class="text-warning">
@@ -315,10 +315,18 @@
         </main>
 
         <!-- Right Sidebar/Profile Section -->
-        <aside class="col-md-2 wss_profile-sidebar">
+        <aside class="col-md-12 col-lg-2 col-sm-12 wss_profile-sidebar">
           <div class="wss_top-icons">
-            <img src="assets/imgs/cart.svg" alt="Shopping Cart" />
-            <img src="assets/imgs/bell.svg" alt="Notifications" />
+            <img
+              src="assets/imgs/cart.svg"
+              alt="Shopping Cart"
+              class="img-second"
+            />
+            <img
+              src="assets/imgs/bell.svg"
+              alt="Notifications"
+              class="img-second"
+            />
             <img src="assets/imgs/icon-right.svg" alt="User Options" />
           </div>
 

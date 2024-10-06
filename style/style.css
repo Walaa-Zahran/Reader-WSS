@@ -62,11 +62,11 @@ body {
 .wss_nav-item .nav-link span {
   font-family: "Merrant", sans-serif;
   font-size: 14px;
-  /* width: 85px; */
+  width: auto;
   white-space: pre-wrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  word-break: break-word;
+  /* word-break: break-word; */
 }
 .wss_img-logo {
   margin-top: 40px;
@@ -85,7 +85,7 @@ hr {
 /** Search Bar **/
 .wss_search-container {
   position: relative;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 .wss_search-input {
   padding: 15px 40px 15px 65px;
@@ -100,12 +100,15 @@ hr {
 .wss_search-input::placeholder {
   color: var(--text-color);
 }
+.sidebar-nav.hidden {
+  display: none !important;
+}
 
 .wss_search-container::before {
   content: url("../assets/imgs/search-icon.svg");
   position: absolute;
-  left: 10px;
-  top: 50%;
+  left: 15px;
+  top: 55%;
   transform: translateY(-50%);
   pointer-events: none;
 }
@@ -114,26 +117,28 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 10px 0px 50px;
+  padding: 0px 0px 0px 50px;
   background: url("../assets/imgs/bg-hero.svg");
   background-size: 100% 100%;
   background-position: center;
   border-radius: 15px;
   background-repeat: no-repeat;
-  /* margin-top: -5rem; */
+  margin-top: -2rem;
 }
 .wss_hero-left {
   flex: 2;
 }
 .wss_hero-left h2 {
-  font-size: 28px;
+  font-size: 23px;
   font-family: "Merrant", sans-serif;
   margin-bottom: 1rem;
+  font-weight: 600;
 }
 .wss_hero-left p {
   font-size: 17px;
   font-family: "Cabin", sans-serif;
   margin-bottom: 1rem;
+  width: 12rem;
 }
 .wss_btn-browse {
   background-color: var(--shadow-color);
@@ -141,24 +146,33 @@ hr {
   border-radius: 50px;
   border: none;
   color: var(--text-color);
-  font-size: 14px;
+  font-family: "Merrant", sans-serif;
+  font-size: 12px;
   cursor: pointer;
 }
 .wss_hero-right {
   flex: 3;
   text-align: center;
+  padding-top: 0px;
 }
 .wss_hero-img {
   max-width: 100%;
   height: auto;
-  padding-top: 2.5rem;
+  width: 90%;
+  margin-top: 2rem;
 }
 
 /** Recommended Books **/
+.wss_recommended-section {
+  margin-top: -3rem;
+}
 .wss_recommended-section h3 {
   font-size: 18px;
   color: var(--text-grey);
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+.wss_recommended-section .card-text {
+  margin-bottom: 0.5rem;
 }
 .wss_recommended-section .text-rating {
   font-size: 18px;
@@ -169,8 +183,8 @@ hr {
   background-color: transparent;
   border: none;
   border-radius: 10px;
-  margin-bottom: 2rem;
   flex-direction: row;
+  gap: 25px;
 }
 .wss_book-card .card-title {
   font-size: 16px;
@@ -182,13 +196,14 @@ hr {
   opacity: 0.6;
   font-size: 13px;
   font-family: "Cabin", sans-serif;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
   color: var(--text-color);
 }
 .wss_description {
   font-size: 13px;
   font-family: "Merrant", sans-serif;
   color: var(--text-color);
+  max-width: 100%;
 }
 
 /** Tabs Section **/
@@ -204,11 +219,13 @@ hr {
 .wss_tabs-section .nav-link.active {
   color: var(--text-color);
   background: transparent;
+  padding-left: 0;
 }
 .wss_nav-years .nav-link {
   color: var(--text-color);
   font-family: "Cabin", sans-serif;
   font-size: 13px;
+  padding: 0.5rem 0.8rem;
 }
 .wss_nav-years .nav-link.active {
   background: transparent;
@@ -232,10 +249,7 @@ hr {
   font-family: "Merrant", sans-serif;
 }
 /** Books Grid **/
-.wss_book-card img {
-  max-height: 200px;
-  object-fit: cover;
-}
+
 .wss_book-card .wss_book-name {
   font-size: 12px;
   margin-top: 1rem;
@@ -260,6 +274,9 @@ hr {
 }
 .wss_top-icons img {
   cursor: pointer;
+}
+.img-second {
+  width: 16px;
 }
 .wss_btn-toggle-dir {
   background: none;
@@ -292,13 +309,13 @@ hr {
 }
 .wss_help-section button {
   background-color: var(--shadow-color);
-  padding: 8px;
+  padding: 10px 40px;
   border: none;
   color: var(--text-color);
   cursor: pointer;
   background: #9098d8;
   border-radius: 50px;
-  width: 50%;
+  width: max-content;
   font-size: 12px;
   font-family: "Merrant", sans-serif;
 }
@@ -318,17 +335,17 @@ hr {
 }
 .wss_info-box span {
   font-family: "Cabin", sans-serif;
-  font-size: 12px;
+  font-size: 10px;
   display: flex;
   gap: 10px;
-  /* opacity: 0.4; */
   margin-bottom: 0px;
   font-style: italic;
 }
 .wss_info-details {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 5px;
+  justify-content: space-evenly;
 }
 .wss_help-section {
   padding: 1rem;
@@ -338,8 +355,7 @@ hr {
   gap: 20px;
   flex-direction: column;
   background: #2b335b;
-  margin: 1.5rem;
-  /* width: 100%; */
+  margin: 0rem 1.5rem 1rem;
 }
 .wss_help-section .title {
   font-size: 19px;
@@ -348,19 +364,19 @@ hr {
 }
 .wss_help-section .text-lorem {
   font-family: "Cabin", sans-serif;
-  font-size: 12px;
+  font-size: 10px;
 }
 /* Responsive Styles */
 @media (max-width: 768px) {
   .wss_hero {
     flex-direction: column;
     align-items: center;
+    margin-top: 2rem;
   }
   .wss_hero-right {
     margin-top: 1rem;
   }
   .wss_img-logo {
-    transform: rotate(90deg);
     margin-top: 40px;
     max-width: max-content;
     margin-left: -40px;

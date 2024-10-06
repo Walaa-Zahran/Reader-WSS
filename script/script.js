@@ -9,12 +9,12 @@ document
   .addEventListener("click", toggleDirection);
 
 // Toggle Sidebar Visibility
-// const toggleSidebar = () => {
-//   const sidebar = document.querySelector(".wss_sidebar");
-//   sidebar.classList.toggle("visible");
-// };
+const toggleSidebar = () => {
+  const sidebar = document.querySelector(".sidebar-nav");
+  sidebar.classList.toggle("hidden");
+};
 
-// // Attach Click Event to Sidebar Toggle Button
-// document
-//   .querySelector(".wss_btn-toggle-sidebar")
-//   .addEventListener("click", toggleSidebar);
+// Attach Click Event to Sidebar Toggle Button
+document
+  .querySelector(".wss_img-logo")
+  .addEventListener("click", toggleSidebar);
