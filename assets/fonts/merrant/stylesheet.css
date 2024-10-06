@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Merrant';
+    src: url('Merrant-Bold.eot');
+    src: local('Merrant Bold'), local('Merrant-Bold'),
+        url('Merrant-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Merrant-Bold.woff2') format('woff2'),
+        url('Merrant-Bold.woff') format('woff'),
+        url('Merrant-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merrant';
+    src: url('Merrant-Regular.eot');
+    src: local('Merrant Regular'), local('Merrant-Regular'),
+        url('Merrant-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Merrant-Regular.woff2') format('woff2'),
+        url('Merrant-Regular.woff') format('woff'),
+        url('Merrant-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merrant Lithe';
+    src: url('Merrant-Lithe.eot');
+    src: local('Merrant Lithe'), local('Merrant-Lithe'),
+        url('Merrant-Lithe.eot?#iefix') format('embedded-opentype'),
+        url('Merrant-Lithe.woff2') format('woff2'),
+        url('Merrant-Lithe.woff') format('woff'),
+        url('Merrant-Lithe.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+

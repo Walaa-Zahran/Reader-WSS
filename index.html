@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reader - Home</title>
+    <link
+      rel="icon"
+      href="assets/imgs/head-logo.png"
+      size="16x16"
+      type="image/png"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid wss_dashboard">
+      <div class="row">
+        <!-- Sidebar -->
+        <aside class="col-sm-2 wss_sidebar p-5">
+          <header aria-label="Sidebar Header">
+            <img
+              src="assets/imgs/logo.svg"
+              alt="Reader Logo"
+              class="wss_img-logo"
+            />
+          </header>
+
+          <nav class="mt-5 pt-3" aria-label="Sidebar Navigation">
+            <ul class="nav flex-column">
+              <li class="nav-item wss_nav-item">
+                <a class="nav-link active" href="#">
+                  <img
+                    src="assets/imgs/home.svg"
+                    alt="home"
+                    width="19px"
+                    height="19px"
+                  />
+                  <span class="d-none d-xxl-block d-xl-block d-lg-block"
+                    >Home</span
+                  >
+                </a>
+              </li>
+              <li class="nav-item wss_nav-item">
+                <a class="nav-link" href="#">
+                  <img
+                    src="assets/imgs/discover.svg"
+                    alt="discover"
+                    width="19px"
+                    height="19px"
+                  />
+                  <span class="d-none d-xxl-block d-xl-block d-lg-block"
+                    >Discover</span
+                  >
+                </a>
+              </li>
+              <li class="nav-item wss_nav-item">
+                <a class="nav-link" href="#">
+                  <img
+                    src="assets/imgs/recommendations.svg"
+                    alt="recommendations"
+                    width="19px"
+                    height="19px"
+                  />
+                  <span class="d-none d-xxl-block d-xl-block d-lg-block"
+                    >Recommendations</span
+                  >
+                </a>
+              </li>
+              <li class="nav-item wss_nav-item">
+                <a class="nav-link" href="#">
+                  <img
+                    src="assets/imgs/wishlist.svg"
+                    alt="wishlist"
+                    width="19px"
+                    height="19px"
+                  />
+                  <span class="d-none d-xxl-block d-xl-block d-lg-block"
+                    >Wishlist</span
+                  >
+                </a>
+              </li>
+              <li class="nav-item wss_nav-item">
+                <a class="nav-link" href="#">
+                  <img
+                    src="assets/imgs/settings.svg"
+                    alt="settings"
+                    width="19px"
+                    height="19px"
+                  />
+                  <span class="d-none d-xxl-block d-xl-block d-lg-block"
+                    >Settings</span
+                  >
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="col-sm-12 col-md-8 wss_main-content">
+          <!-- Search Bar -->
+          <nav class="wss_search-container" aria-label="Search Books">
+            <input
+              type="text"
+              placeholder="Search your favorite books"
+              class="wss_search-input"
+            />
+          </nav>
+
+          <!-- Welcome Section -->
+          <section class="wss_hero">
+            <header class="wss_hero-left">
+              <h2>Hi Lara!</h2>
+              <p>Here is a customised world of books for you.</p>
+              <button class="wss_btn-browse">Browse Latest</button>
+            </header>
+            <aside class="wss_hero-right">
+              <img
+                src="assets/imgs/img-hero.svg"
+                alt="Welcome to your books world"
+                class="wss_hero-img"
+              />
+            </aside>
+          </section>
+
+          <!-- Recommended Books -->
+          <section class="wss_recommended-section mb-4">
+            <h3>Recommended For You</h3>
+            <div class="row wss_recommended-card">
+              <article class="col-md-5 wss_book-card">
+                <div class="card">
+                  <img
+                    src="assets/imgs/bald-1.svg"
+                    class="card-img-top img-fluid"
+                    alt="Bald Bearded Boss"
+                  />
+                  <div class="card-body px-0">
+                    <h5 class="card-title">Bald Bearded Boss</h5>
+                    <p class="wss_author">By Elliott Holt | Feb 2020</p>
+                    <p class="card-text">
+                      <span class="text-warning">
+                        <img src="assets/imgs/rating.svg" alt="5 star rating" />
+                      </span>
+                      <span class="text-rating">(27)</span>
+                    </p>
+                    <p class="wss_description">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                      Aenean commodo ligula eget dolor. Lorem ipsum dolor sit
+                      amet, consectetu eradipiscing elit.
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <article class="col-md-3"></article>
+              <article class="col-md-4 wss_book-card">
+                <div class="card">
+                  <div class="card-body px-4">
+                    <h5 class="card-title">Human Flourishing</h5>
+                    <p class="wss_author">By Francis Su | Feb 2020</p>
+                    <p class="card-text">
+                      <span class="text-warning">
+                        <img src="assets/imgs/rating.svg" alt="5 star rating" />
+                      </span>
+                      <span class="text-rating">(27)</span>
+                    </p>
+                    <p class="wss_description">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                      Aenean commodo ligula eget dolor. Lorem ipsum dolor sit
+                      amet, consectetu eradipiscing elit.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- Best Seller - Book Tabs -->
+          <section class="wss_tabs-section">
+            <nav class="nav nav-tabs mb-3" aria-label="Book Categories">
+              <li class="nav-item wss_nav-bottom">
+                <a class="nav-link active" href="#"
+                  >The New York Times Best Sellers</a
+                >
+              </li>
+              <li class="nav-item wss_nav-bottom">
+                <a class="nav-link" href="#">Literary Awards</a>
+              </li>
+              <li class="nav-item wss_nav-bottom">
+                <a class="nav-link" href="#">Unheard Voices</a>
+              </li>
+              <li class="nav-item wss_nav-bottom">
+                <a class="nav-link" href="#">Tab Four</a>
+              </li>
+            </nav>
+          </section>
+
+          <!-- Years Navigation -->
+          <section class="wss_years-navigation">
+            <ul
+              class="nav nav-tabs nav-tabs-years mb-3 mt-4"
+              aria-label="Year-wise Book Tabs"
+            >
+              <li class="nav-item wss_nav-years">
+                <a class="nav-link" href="#">Recent</a>
+              </li>
+              <li class="nav-item wss_nav-years">
+                <a class="nav-link active" href="#">2019</a>
+              </li>
+              <li class="nav-item wss_nav-years">
+                <a class="nav-link" href="#">2018</a>
+              </li>
+              <li class="nav-item wss_nav-years">
+                <a class="nav-link" href="#">2017</a>
+              </li>
+              <li class="nav-item wss_nav-years">
+                <a class="nav-link" href="#">2016</a>
+              </li>
+              <li class="nav-item wss_nav-years">
+                <a class="nav-link" href="#">2010s</a>
+              </li>
+              <li class="nav-item wss_nav-years">
+                <a class="nav-link" href="#">2000s</a>
+              </li>
+              <li class="nav-item wss_nav-years">
+                <a class="nav-link" href="#">1990's</a>
+              </li>
+              <li class="nav-item wss_nav-years">
+                <a class="nav-link" href="#">1980's</a>
+              </li>
+              <li class="nav-item wss_nav-years">
+                <a class="nav-link" href="#">1970's</a>
+              </li>
+              <li class="nav-item wss_nav-years">
+                <a class="nav-link" href="#">1960's</a>
+              </li>
+              <li class="nav-item wss_nav-years">
+                <a class="nav-link" href="#">1950's</a>
+              </li>
+              <li class="nav-item wss_nav-years">
+                <a class="nav-link" href="#">1940's</a>
+              </li>
+            </ul>
+          </section>
+
+          <!-- Books Grid -->
+          <div class="row pt-4 pb-5">
+            <article class="col-md-4 wss_book-card">
+              <div class="card">
+                <img
+                  src="assets/imgs/dragon.svg"
+                  alt="The Tiny Dragon Book Cover"
+                  class="img-fluid"
+                />
+                <div class="card-body">
+                  <h5 class="wss_book-name">The Tiny Dragon</h5>
+                  <p class="wss_author-bottom">By Mesha Maren | Feb 2020</p>
+                  <p class="card-text">
+                    <span class="text-warning">
+                      <img src="assets/imgs/rating.svg" alt="5 star rating" />
+                    </span>
+                    <span class="text-rating">(27)</span>
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="col-md-4 wss_book-card">
+              <div class="card">
+                <img
+                  src="assets/imgs/abstract.svg"
+                  alt="The Tiny Dragon Book Cover"
+                  class="img-fluid"
+                />
+                <div class="card-body">
+                  <h5 class="wss_book-name">The Tiny Dragon</h5>
+                  <p class="wss_author-bottom">By Mesha Maren | Feb 2020</p>
+                  <p class="card-text">
+                    <span class="text-warning">
+                      <img src="assets/imgs/rating.svg" alt="5 star rating" />
+                    </span>
+                    <span class="text-rating">(27)</span>
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="col-md-4 wss_book-card">
+              <div class="card">
+                <img
+                  src="assets/imgs/kiss.svg"
+                  alt="The Tiny Dragon Book Cover"
+                  class="img-fluid"
+                />
+                <div class="card-body">
+                  <h5 class="wss_book-name">The Tiny Dragon</h5>
+                  <p class="wss_author-bottom">By Mesha Maren | Feb 2020</p>
+                  <p class="card-text">
+                    <span class="text-warning">
+                      <img src="assets/imgs/rating.svg" alt="5 star rating" />
+                    </span>
+                    <span class="text-rating">(27)</span>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </main>
+
+        <!-- Right Sidebar/Profile Section -->
+        <aside class="col-md-2 wss_profile-sidebar">
+          <div class="wss_top-icons">
+            <img src="assets/imgs/cart.svg" alt="Shopping Cart" />
+            <img src="assets/imgs/bell.svg" alt="Notifications" />
+            <img src="assets/imgs/icon-right.svg" alt="User Options" />
+          </div>
+
+          <div class="text-center mt-5">
+            <img
+              src="assets/imgs/profile-pic.svg"
+              alt="Profile Picture of Lara Smith"
+            />
+            <p class="wss_profile-name mt-3">Lara Smith</p>
+            <p class="wss_profile-email">lara@gmail.com</p>
+          </div>
+
+          <!-- Reward Section -->
+          <div class="wss_reward-section">
+            <img src="assets/imgs/champion.svg" alt="champion" />
+            <p class="wss_reward-points my-2">1.2k Reward Points</p>
+          </div>
+          <hr />
+          <!-- Wishlist and Read Info Box -->
+          <div class="wss_info-box">
+            <img src="assets/imgs/bookmark.svg" alt="bookmark" />
+            <div class="wss_info-details">
+              <strong
+                ><img src="assets/imgs/lock.svg" alt="lock" />Wishlist</strong
+              >
+              <p>13 Books</p>
+              <span><img src="assets/imgs/men.svg" alt="men" /> Private</span>
+            </div>
+          </div>
+
+          <div class="wss_info-box">
+            <img src="assets/imgs/read.svg" alt="read" />
+            <div class="wss_info-details">
+              <strong><img src="assets/imgs/lock.svg" alt="lock" />Read</strong>
+              <p>13 Books</p>
+              <span
+                ><img src="assets/imgs/men.svg" alt="men" />Shared with 03
+                users</span
+              >
+            </div>
+          </div>
+          <hr />
+          <!-- Help Section -->
+          <div class="wss_help-section">
+            <p class="title">Help us Get Better</p>
+            <p class="text-lorem">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetu
+              eradipiscing elit.
+            </p>
+            <button class="wss_btn-custom">Vote</button>
+          </div>
+          <!-- Adding LTR/RTL Toggle Buttons  -->
+          <header aria-label="Main Header" class="wss_header">
+            <div class="d-flex justify-content-center align-items-center mb-3">
+              <button class="wss_btn-toggle-dir wss_btn-custom">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  fill="#fff"
+                  class="bi bi-translate"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z"
+                  />
+                  <path
+                    d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31"
+                  />
+                </svg>
+              </button>
+            </div>
+          </header>
+        </aside>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and Dependencies -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom JS -->
+    <script src="script/script.js"></script>
+  </body>
+</html>
